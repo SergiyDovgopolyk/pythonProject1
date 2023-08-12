@@ -30,35 +30,11 @@ unknown = set()
 extensions = set()
 
 
-registered_extensions = {
-    'JPEG': jpeg_files,
-    'PNG': png_files,
-    'SVG': svg_files,
-    'GIF': gif_files,
-    'BMP': bmp_files,
-    'TIF': tif_files,
-    'TIFF': tiff_files,
-    'JPG': jpg_files,
-    'TXT': txt_files,
-    'DOCX': docx_files,
-    'DOC': doc_files,
-    'PDF': pdf_files,
-    'XLSX': xlsx_files,
-    'PPTX': pptx_files,
-    'ZIP': archives,
-    'GZ': archives,
-    'TAR': archives,
-    'RAR': archives,
-    'MP3': mp3_files,
-    'OGG': ogg_files,
-    'WAV': wav_files,
-    'AMR': amr_files,
-    'AVI': avi_files,
-    'MP4': mp4_files,
-    'MOV': mov_files,
-    'MKV': mkv_files,
-
-}
+registered_extensions = dict(JPEG=jpeg_files, PNG=png_files, SVG=svg_files, GIF=gif_files, BMP=bmp_files, TIF=tif_files,
+                             TIFF=tiff_files, JPG=jpg_files, TXT=txt_files, DOCX=docx_files, DOC=doc_files,
+                             PDF=pdf_files, XLSX=xlsx_files, PPTX=pptx_files, ZIP=archives, GZ=archives, TAR=archives,
+                             RAR=archives, MP3=mp3_files, OGG=ogg_files, WAV=wav_files, AMR=amr_files, AVI=avi_files,
+                             MP4=mp4_files, MOV=mov_files, MKV=mkv_files)
 
 def get_extensions(file_name):
     return Path(file_name).suffix[1:].upper()

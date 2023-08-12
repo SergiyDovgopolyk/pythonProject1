@@ -14,18 +14,18 @@ def hande_file(path, root_folder, dist):
 
 
 def handle_archive(path, root_folder, dist):
-    global new_name
+
     target_folder = root_folder / dist
     target_folder.mkdir(exist_ok=True)
 
-    if path.suffix == '.zip':
-        new_name = normalize.normalize(path.name.replace('.zip', ''))
-    elif path.suffix == '.gz':
-        new_name = normalize.normalize(path.name.replace('.gz', ''))
-    elif path.suffix == '.rar':
-        new_name = normalize.normalize(path.name.replace('.rar', ''))
-    elif path.suffix == '.tar':
-        new_name = normalize.normalize(path.name.replace('.tar', ''))
+
+    new_name = normalize.normalize(path.name.replace('.zip', ''))
+
+    new_name = normalize.normalize(path.name.replace('.gz', ''))
+
+    new_name = normalize.normalize(path.name.replace('.rar', ''))
+
+    new_name = normalize.normalize(path.name.replace('.tar', ''))
 
     archive_folder = root_folder / new_name
     archive_folder.mkdir(exist_ok=True)
