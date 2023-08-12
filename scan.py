@@ -63,7 +63,7 @@ def scan(folder):
                 unknown.add(extension)
                 others.append(new_name)
 
-
+"""
 if __name__ == '__main__':
     path = sys.argv[1]
     print(f"Start in {path}")
@@ -80,3 +80,5 @@ if __name__ == '__main__':
     print(f"unknown: {others}\n")
     print(f"All extensions: {extensions}\n")
     print(f"Unknown extensions: {unknown}\n")
+
+"""
