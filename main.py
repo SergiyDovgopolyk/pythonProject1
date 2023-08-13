@@ -145,6 +145,6 @@ if __name__ == '__main__':
     print(f"Start in {path}")
 
     arg = Path(path)
-    file_generator(arg)
+
     main(arg.resolve())
 
