@@ -88,7 +88,7 @@ def main(folder_path):
     for file in tiff_files:
         hande_file(file, folder_path, "images")
 
-    for file in scan.txt_files:
+    for file in txt_files:
         hande_file(file, folder_path, "documents")
 
     for file in docx_files:
