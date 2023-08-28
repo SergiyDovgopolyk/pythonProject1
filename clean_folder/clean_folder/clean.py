@@ -217,11 +217,3 @@ def normalize(name):
     new_name = re.sub(r'\W', "_", new_name)
     return f"{new_name}.{'.'.join(extension)}"
 
-def running():
-    if __name__ == '__main__':
-        path = sys.argv[1]
-        print(f"Start in {path}")
-
-        arg = Path(path)
-
-        main(arg.resolve())
