@@ -216,3 +216,4 @@ def normalize(name):
     new_name = name.translate(TRANS)
     new_name = re.sub(r'\W', "_", new_name)
     return f"{new_name}.{'.'.join(extension)}"
+
